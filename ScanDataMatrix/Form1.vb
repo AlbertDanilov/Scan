@@ -34,7 +34,48 @@ Public Class Form1
         Scanned_TextBox_Select()
 
         nums = New List(Of Integer)
+
+
+        '' ШИФРОВАНИЕ ЛОГИНА И ПАРОЛЯ В КАССЕ
+        'Dim login = "login"
+        'Dim login_int() As Integer
+        'Dim login_shifr = ""
+
+        'login_int = set_str(login)
+        'login_shifr = set_str_s(login_int)
+
+        'MessageBox.Show(login_shifr)
+
+
     End Sub
+
+
+    '' ШИФРОВАНИЕ ЛОГИНА И ПАРОЛЯ В КАССЕ
+    'Private Function set_str(ByVal str_s As String) As Integer()
+    '    Dim int_s() As Integer = {Asc(" ") * 2}
+    '    If str_s.Length > 0 Then
+    '        Dim i As Integer
+    '        Dim sm As Integer = Asc(str_s.Substring(0, 1))
+    '        ReDim int_s(str_s.Length - 1)
+    '        For i = 0 To str_s.Length - 1
+    '            int_s(i) = Asc(str_s.Substring(i, 1)) + sm + i
+    '        Next
+    '    End If : Return int_s
+    'End Function
+
+    'Private Function set_str_s(masi As Integer()) As String
+    '    Dim ss As String = ""
+    '    If masi.Length > 0 Then
+    '        For i As Integer = 0 To masi.Length - 1
+    '            ss &= masi(i) & "-"
+    '        Next
+    '        ss = ss.Substring(0, ss.Length - 1)
+    '    End If
+    '    Return ss
+    'End Function
+
+
+
 
     Private Sub Scanned_TextBox_Select() Handles SN_TextBox.Click, MyBase.Click, GTIN_TextBox.Click
         Scanned_TextBox.Select()
