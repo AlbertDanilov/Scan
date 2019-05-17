@@ -12,6 +12,15 @@ Public Class Form1
     Private Sub Work()
         Dim DM As New MyDataMatrix
 
+        For Each num In nums
+            nums_tb.Invoke(Sub()
+                               nums_tb.Text &= num.ToString & " "
+                           End Sub)
+            sg_tb.Invoke(Sub()
+                             sg_tb.Text &= ChrW(num)
+                         End Sub)
+        Next
+
         DataMatrixHelpers.SplitStrList(DM, nums, 29)
         'DataMatrixHelpers.SplitStrString(DM, buffer_text, " ")
 

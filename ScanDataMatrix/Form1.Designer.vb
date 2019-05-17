@@ -44,12 +44,18 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Esc_Button = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.nums_tb = New System.Windows.Forms.TextBox()
+        Me.sg_tb = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.sg_tb)
+        Me.Panel2.Controls.Add(Me.nums_tb)
+        Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.TextBox4)
         Me.Panel2.Controls.Add(Me.TextBox5)
         Me.Panel2.Controls.Add(Me.TextBox3)
@@ -68,7 +74,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Location = New System.Drawing.Point(7, 28)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(271, 395)
+        Me.Panel2.Size = New System.Drawing.Size(271, 503)
         Me.Panel2.TabIndex = 3
         '
         'TextBox4
@@ -257,7 +263,7 @@ Partial Class Form1
         '
         Me.Esc_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Esc_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Esc_Button.Location = New System.Drawing.Point(95, 424)
+        Me.Esc_Button.Location = New System.Drawing.Point(97, 537)
         Me.Esc_Button.Name = "Esc_Button"
         Me.Esc_Button.Size = New System.Drawing.Size(30, 19)
         Me.Esc_Button.TabIndex = 5
@@ -267,17 +273,43 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(128, 426)
+        Me.Label10.Location = New System.Drawing.Point(130, 539)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(56, 13)
         Me.Label10.TabIndex = 6
         Me.Label10.Text = "-  очистка"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(13, 389)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(0, 13)
+        Me.Label11.TabIndex = 32
+        '
+        'nums_tb
+        '
+        Me.nums_tb.Location = New System.Drawing.Point(6, 395)
+        Me.nums_tb.Multiline = True
+        Me.nums_tb.Name = "nums_tb"
+        Me.nums_tb.ReadOnly = True
+        Me.nums_tb.Size = New System.Drawing.Size(258, 56)
+        Me.nums_tb.TabIndex = 33
+        '
+        'sg_tb
+        '
+        Me.sg_tb.Location = New System.Drawing.Point(6, 452)
+        Me.sg_tb.Multiline = True
+        Me.sg_tb.Name = "sg_tb"
+        Me.sg_tb.ReadOnly = True
+        Me.sg_tb.Size = New System.Drawing.Size(258, 45)
+        Me.sg_tb.TabIndex = 34
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 444)
+        Me.ClientSize = New System.Drawing.Size(284, 558)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Esc_Button)
         Me.Controls.Add(Me.Label1)
@@ -316,4 +348,7 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Esc_Button As Button
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents nums_tb As TextBox
+    Friend WithEvents sg_tb As TextBox
 End Class
